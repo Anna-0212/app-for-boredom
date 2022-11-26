@@ -1,38 +1,75 @@
 .App {
-  text-align: center;
+  background-color: rgba(89, 178, 184, 0.5);
+  margin-top: 100px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+h1, p {
+  text-transform: uppercase;
+  font-family: 'Patrick Hand', cursive;
+}
+h1 {
+  font-size: 38px;
+  color: #FF9551;
+  text-shadow: 2px 2px 5px #0E5E6F;
+}
+p {
+  color: #355764;
+  font-size: 45px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 5px #FFD39A;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+button {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 25px;
+  padding: 5px 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: rgba(255, 149, 81, 0.7);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(255, 149, 81);
+  transform: scale(1.1);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media all and (max-width: 540px) {
+  h1 {
+    font-size: 30px;
   }
-  to {
-    transform: rotate(360deg);
+  p {
+    font-size: 35px;
+  }
+}
+
+@media all and (max-width: 420px) {
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 280px) {
+  h1 {
+    font-size: 18px;
+    padding: 0px 20px;
   }
 }
